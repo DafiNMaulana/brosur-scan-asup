@@ -1,0 +1,92 @@
+body {
+    background: #f3f7f8 !important;
+}
+
+/* ---font color management--- */
+.judul, .deskripsi {
+    color: #0b4b6e;
+}
+.deskripsi {
+    font-weight: 500;
+}
+/* ---font color END--- */
+
+/* ---scan qr--- */
+.example {
+    padding: 10px;
+    margin: 20px;
+}
+
+.border-qr {
+    --bGapSize: 13;
+    --bBorderSize: 4;
+    --color: #41acd7;
+    position: relative;
+}
+.border-qr.black {
+    --color: rgba(0, 0, 0, .25);
+}
+.border-qr.white {
+    --color: rgba(255, 255, 255, .5);
+}
+.border-qr.blue {
+    --color: rgba(30, 144, 255, .5);
+}
+.border-qr:before, .border-qr:after {
+    position: absolute;
+    top: calc(0px - (var(--bBorderSize) * 1px));
+    top: 0px;
+    height: calc(100% + ( var(--bBorderSize) * 2) * 1px);
+    height: 100%;
+    background-color: var(--color);
+    content: "";
+    width: calc(var(--bGapSize) * 0.1rem);
+    clip-path: polygon(calc(100% - ( var(--bBorderSize) * 1px )) calc(( var(--bGapSize) * 1px )), calc(100% - ( var(--bBorderSize) * 1px )) calc(( var(--bBorderSize) * 1px )), calc(100% - ( (var(--bGapSize) ) * 1px )) calc(var(--bBorderSize) * 1px), calc(100% - ( (var(--bGapSize) ) * 1px )) 0px, 100% 0px, 100% calc(( var(--bGapSize) * 1px )), 100% calc(100% - (var(--bGapSize) ) * 1px), calc(100% - ( var(--bBorderSize) * 1px )) calc(100% - ( var(--bGapSize) * 1px )), calc(100% - ( var(--bBorderSize) * 1px )) calc(100% - ( var(--bBorderSize) * 1px )), calc(100% - ( (var(--bGapSize) ) * 1px )) calc(100% - ( var(--bBorderSize) * 1px )), calc(100% - ( (var(--bGapSize) ) * 1px )) 100%, 100% 100%, 100% calc(( var(--bGapSize) * 1px )));
+}
+.border-qr:before {
+    left: calc(0px - (var(--bBorderSize) * 1px));
+    left: 0px;
+    transform: scaleX(-1);
+}
+.border-qr:after {
+    right: calc(0px - (var(--bBorderSize) * 1px));
+    right: 0px;
+}
+/* ---scan qr END--- */
+
+
+/* ---footer 1--- */
+
+.footer-1 {
+    background-color: #c9d8dd;
+}
+
+span {
+    padding: 1px 6px;
+    font-size: 13px;
+}
+
+/* judul tutor */
+.judul-tutor {
+    margin-left: -15px;
+    font-size: 13px;
+}
+/* judul tutor END */
+
+/* main tuutor */
+.main-tutor {
+    font-size: 12px;
+    margin-left: -15px;
+    margin-top: -10px;
+}
+/* main tuutor END */
+
+
+/* ---footer 1 END--- */
+
+/* ---footer 2--- */
+.footer-2 {
+    background: #0b4b6e;
+    font-size: 13px;
+}
+/* ---footer 2 END--- */
