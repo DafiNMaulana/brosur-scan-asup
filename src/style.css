@@ -2,6 +2,14 @@ body {
     background: #f3f7f8 !important;
 }
 
+/* --responsive-- */
+@media (min-width: 768px) {
+    .row-cara {
+        padding-left: 10px;
+    }
+}
+/* --responsive end-- */
+
 /* ---font color management--- */
 .judul, .deskripsi {
     color: #0b4b6e;
